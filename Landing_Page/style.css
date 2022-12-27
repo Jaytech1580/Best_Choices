@@ -1,0 +1,366 @@
+html{
+    box-sizing: border-box;
+    overflow: auto;
+}
+*{
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: inherit;
+}
+body{
+    font-family: Dosis;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    height: 80px;
+    padding-bottom: 10%;
+    /*border: 5px solid #f8500d;*/
+    background: #ffff;
+}
+#logo {
+    width: 40%;
+    line-height: 60px;
+    padding-left: 30px;
+}
+#logo span{
+    color: #f8500d;
+}
+#menu {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+ul.menu {
+    float: right;
+    margin-right: 20px;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+ul.menu li{
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 5px;
+}
+ul.menu li a{
+    color: #f8500d;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a:hover,a.active{
+    background: #090c0a;
+    transition: .5s;
+}
+.checkbtn  {
+    float: right;
+    line-height: 80px;
+    font-size: 30px;
+    color: #ffff;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+#check{
+    display:none;  
+}
+main{
+    box-sizing: inherit;
+    /*border: 5px solid #090c0a;*/
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    /*border: 5px solid #4df869;*/
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+#search{
+    /*border: 2px solid #0e110e;*/
+    flex-basis: 60%;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 25px;
+}
+.search-head{
+    font-size: 25px;
+    padding-left: 50px;
+}
+.search-bar h6{
+    margin: 0px;
+    padding-right: 50%;
+    padding-bottom: 10px;
+}
+#search-input{
+    width: 50%;
+    height: 50px;
+    border: 1px solid #000;
+    font-size: 25px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.search-btn button{
+    width: 20%;
+    height: 25px;
+    background: #f8500d;
+    color: #ffff;
+    border: 1px solid #000;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+.img{
+    /*border: 2px solid #f84dc5;*/
+    flex-basis: 40%;
+}
+.img img{
+    width: 70%;
+    height: 80%;
+    margin: 20px auto;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+#helpline{
+    width: 100%;
+    height: 50px;
+    background: #f8500d;
+    color: #ffff;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 5%;
+}
+#helpline h6{
+    margin: 0px;
+    width: 100%;
+}
+#stores{
+    /*border: 5px solid #110df8;*/
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.images, .images-child{
+    display: inline-block;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    /*border: 2px solid #110df8;*/
+    
+}
+.images img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.images p{
+    text-align: center;
+}
+.store-img, .head{
+    padding-left: 40px;
+}
+.images-child{
+    width: 270px;
+}
+.images-child img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#advert-1{
+    width: 100%;
+    height: 250px;
+    background-image: url("images/vegetables-set-left-black-slate.jpg");
+    background-repeat: cover;
+    background-size: 200px 100%;
+    text-align: center;
+    color: #ffff;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#deals{
+    /*border: 5px solid #f80d96;*/
+    width: 100%; 
+    height: 380px;
+    padding-left: 50px;
+}
+#deals .deal{
+    display: inline-block;
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+    /*border: 2px solid #f80d96;*/
+    text-align: center;
+}
+.deal img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#category{
+    /*border: 5px solid #d5f80d;*/
+    width: 100%;
+    height: 250px;
+    padding-left: 0;
+    text-align: center;
+}
+#category button{
+    width: 350px;
+    height: 50px;
+    margin: 0 40px 40px 40px;
+    background-color: #f8500d;
+    border-radius: 15px;
+    color: #ffff;
+    font-size: 20px;
+}
+#testimonials{
+    /*border: 5px solid #f8500d;*/
+    width: 100%;
+    height: 250px;
+    background-color: #f8500d;
+    text-align: center;
+}
+.testimonials{
+    width: 800px;
+    height: 150px;
+    background: #ffff;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+.test{
+    /*border: 2px solid #13100f;*/
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+    font-size: 12px;
+}
+.test img{
+    width: 7%;
+    border-radius: 50%;
+}
+#questions{
+    /*border: 5px solid #0db5f8;*/
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+.questions{
+    /*border: 2px solid #0db5f8;*/
+    width: 900px;
+    height: 180px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+#advert-2{
+    border: 5px solid #1a0801; 
+    width: 100%;
+    height: 150px;
+    background-image: url("images/victoria-shes-UC0HZdUitWY-unsplash.jpg");
+    background-repeat: cover;
+    background-size: 200px 100%;
+}
+#newsletter{
+    /*border: 5px solid #f80df8;*/
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.hurry, .text-box{
+    /*border: 2px solid #13100f;*/
+    width: 60%;
+    height: 48%;
+    margin: 0 auto;
+}
+.hurry input{
+    width: 45%;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.hurry button{
+    width: 20%;
+    height: 25px;
+    background: #f8500d;
+    color: #ffff;
+    border: 1px solid #000;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+footer{
+    /*border: 5px solid #372eb8;*/
+    width: 100%;
+    height: 420px;
+    background-color: #f8500d;
+    text-align: center;
+    color: #ffff;
+}
+footer img{
+    width: 2%;
+}
+footer a{
+    text-decoration: none;
+    color: #ffff;
+}
+#top{
+    float: right;
+}
+@media screen and (max-width: 952px){
+    h1{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    ul.menu li a{
+        font-size: 13px;
+    }
+    .checkbtn{
+        display: block;
+
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 60vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    ul.menu li{
+        display:block;
+        margin-top: 10px;
+    }
+    ul.menu li a{
+        font-size: 20px; 
+    }
+    a:hover, a.active{
+        background: none;
+        color: #f8500d;
+    }
+    #check :checked ~ ul{
+        left:0;
+    }
+
+}
+@media screen and (max-width: 375px){
+    h1{
+        font-size: 13px;
+        padding-left: 10px;
+    }
+    ul.menu li a{
+        font-size: 13px;
+
+    }
+}

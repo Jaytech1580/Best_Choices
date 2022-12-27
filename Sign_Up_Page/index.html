@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Sign-Up landing page</title>
+    </head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3><b>Best-Choice <span>Dishes</span></b></h3>
+        </div>
+        <div class="form">
+            <form action="">
+                <div class="inputs">
+                    <input type="text" name="Full name" id="name" placeholder="Full name" pattern="[a-zA-Z]">
+                    <br>
+                </div>
+                <div class="inputs">
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="123-456-7890" >
+                </div>
+                <div class="inputs">
+                    <input type="email" name="mails" id="mails" placeholder="Email" pattern="[a-z0-9.-_%+]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <br>
+                </div>
+                <div class="inputs">
+                    <input type="password" name="password" id="password" placeholder="Enter Password" pattern=".{8,}" title="Use Eight or more characters">
+                    <br>
+                </div>
+                <div class="inputs">
+<!--                    <i class="fa-regular fa-lock"></i>-->
+                    <input type="password" name="password" id="password_2" placeholder="Confirm Password" pattern="Use Eight or more characters"  >
+                </div>
+            </form>
+            <div class="btn">
+               <a href="file:///C:/Users/KALI/Desktop/BEST%20FOOD/Log_In_Page/index.html" id="sign_up" ><button onclick="checkName(), checkPhone(), checkMails(), checkPassword(), checkPassword_2()"><b>Sign-Up</b></button></a>
+               <p>Got an account already? <a href="file:///C:/Users/KALI/Desktop/BEST%20FOOD/Log_In_Page/index.html" id="log_in"><b>Log In </b></a></p> 
+            </div>
+        </div>
+    </div>
+   <!-- <script src="https://kit.fontawesome.com/9ef880edfa.js" crossorigin="anonymous"></script>*/-->
+    <script src="main.js">    </script>
+</body>
+</html>

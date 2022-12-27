@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9ef880edfa.js" crossorigin="anonymous"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+<header class="nav">
+    <div id="logo">
+        <h1>Best-Choice <span>Dishes</span></h1>
+    </div>
+    <div id="menu">
+        <ul class="menu">
+            <li><a  href="landing.html"  class="active">Home</a></li>
+                <li><a href="menu.html">Menus</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Contact</a></li>
+        </ul>
+        <input type="checkbox" id="check" >
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+    </div>
+</header>
+    <main>
+        <section class="search" id="">
+            <div id="search">
+                <div class="search-head">
+                    <p><h1>Order food from favorite restaurants near you.</h1></p>
+                </div>
+                <div class="search-bar">
+                    <h6>Search Items here:</h6>
+                    <div class="search-btn">
+                        <input type="search" name="search" id="search-input" placeholder="Type to Search....." pattern="[A-Za-z]{10}">
+                        <button ondblclick="searchCheck()">Search</button>
+                        <p id="sample"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/53ff42f4-2272-4f0f-a77f-e189e9a6dd2a.jpg" alt="A plate of spaghetti">
+            </div>
+        </section>
+        <section class="" id="helpline">
+            <p><h6><i> Need help placing an order? Call: 017772207 or 015500054 from 8AM to 10PM GMT to order.</i></h6></p>
+        </section>
+        <section class="" id="stores">
+            <div class="head">
+                <p><b>Stores You May Like - Adult</b></p>
+            </div>
+            <div class="store-img">
+                <div class="images" id="img-1">
+                    <a href="menu.html#Sweet_sensation"><img src="images/52038205-d683-462b-b007-91c523cc8c29.jpg" alt="Sweet Sensation logo" title="Sweet Sensation restaurant"></a>
+                    <p><b>Sweet Sensation</b></p>
+                </div>
+                <div class="images" id="img-2">
+                    <a href="menu.html"><img src="images/70761310-2f4e-4ebc-91c9-eb0819e6d316-1.jpg" alt="The Place logo" title="The Place restaurant"></a>
+                    <p><b>The Place</b></p>
+                </div>
+                <div class="images" id="img-3">
+                    <a href="menu.html#Foodie_Lagos"><img src="images/d18666b2-5188-4c35-8563-703ab2d56f87.jpg" alt="Foodie Lagos logo" title="Foodie Lagos restaurant"></a>
+                    <p><b>Foodie Lagos</b></p>
+                </div>
+                <div class="images" id="img-4">
+                    <a href="menu.html#Green_Springs"><img src="images/7b6a2442-bb3b-417b-bf9f-36df1ad8e239.jpg" alt="Green Springs logo" title="Green Springs restaurant"></a>
+                    <p><b>Green Springs Restaurant</b></p>
+                </div>
+                <div class="images" id="img-5">
+                    <a href="menu.html#Just"><img src="images/e419164e-06e9-40fb-8dfa-314308277898.jpg" alt="Just-for-you logo" title="Just For You restaurant"></a>
+                    <p><b>Just For You Restaurant</b></p>
+                </div>
+                <div class="images" id="img-6">
+                    <a href="menu.html#Chicken"><img src="images/884aa8b7-f95f-4119-8f3d-08e204075aef-1.jpg" alt="Chicken Republic logo" title="Chicken Republic Fast Food"></a>
+                    <p><b>Chicken Republic Fast Food</b></p>
+                </div>
+            </div>
+            <hr>
+            <hr>
+            <div class="head">
+                <p><b>Stores You May Like - Kids</b></p>
+            </div>
+            <div class="child-store-img">
+                <div class="images-child" id="img-7">
+                    <a href="menu.html#Delight"><img src="images/9780ecf4-1ca6-420a-a411-0426e2c0a7d3.jpg" alt="Great Delight logo" title="Great Delight Fast Food"></a>
+                    <p><b>Great Delight Fast Food</b></p>
+                </div>
+                <div class="images-child" id="img-8">
+                    <a href="menu.html#Kids_Best"><img src="images/20a49ab0-4b8a-4e59-ada5-f7ff422c5637.jpg" alt="Kid's Best Option logo" title="Kid's Best Option Fast Food"></a>
+                    <p><b>Kid's Best Option Fast Food</b></p>
+                </div>
+                <div class="images-child" id="img-9">
+                    <a href="menu.html#Specially"><img src="images/b0f4dd7f-903b-40cf-9309-343a08b91318.jpg" alt="Specially Made for Children logo" title="Specially Made for Kids Fast Food"></a>
+                    <p><b>Specially Made for Kids Fast Food</b></p>
+                </div>
+                <div class="images-child" id="img-10">
+                    <a href="menu.html#More"><img src="images/fa240c9a-389e-4d0d-bcbf-b2342bafabe0.jpg" alt="Kids and More logo" title="Kids and More Fast Food"></a>
+                    <p><b>Kids and More Fast Food</b></p>
+                </div>
+            </div>
+        </section>
+        <section class="" id="advert-1">
+            <h1>CIRCA Lagos</h1>
+            <p><b>Opening SOON!! Hurry Up and Book a Table today </b></p>
+        </section>
+        <section class="" id="deals">
+            <p><b>Today's hot deals</b></p>
+            <div class="deal" id="deal-1">
+                <a href="#"><img src="images/Food-Social-Media-Banner-18.jpg" alt="Delicious Burger photo" title="Delicious Burger 50% Discount"></a>
+                <p><b>Spicy Delicious Burger with Fries - #2000</b></p>
+            </div>
+            <div class="deal" id="deal-1">
+                <a href="#"><img src="images/JUicy_burger.jpg" alt="Juicy Burger photo" title="Juicy Burger 50% Discount"></a>
+                <p><b>Hot Juicy Burger- #1000</b></p>
+            </div>
+            <div class="deal" id="deal-1">
+                <a href="#"><img src="images/pizza.jpg" alt="Mouthwatering pizza photo" title="Mouthwatering pizza 50% Discount"></a>
+                <p><b>A Cheesed flavoured pizza - #3200</b></p>
+            </div>
+        </section>
+        <section class="" id="category">
+            <p><b>Top Categories</b></p>
+            <a href="menu.html#smokey"><button><b>Smokey Jollof Rice</b></button></a>
+            <a href="menu.html#crispy"><button><b>Crispy Calamari</b></button></a>
+            <a href="menu.html#mayo"><button><b>Prawn Mayo Spring Rolls</b></button></a>
+            <a href="menu.html#okra"><button><b>Seafood Okra</b></button></a>
+            <a href="menu.html#bbq"><button><b>BBQ Chicken Wings</b></button></a>
+            <a href="menu.html#Afang"><button><b>Afang Soup</b></button></a>
+        </section>
+        <section class="" id="testimonials">
+            <p><b>Testimonials</b></p>
+            <div class="testimonials">
+                <div class="test">
+                    <img src="images/3c0fcc17-c344-4b48-b777-d65db21468d0.jpg" alt="Customer's photo" title="Customer's photo">
+                    <blockquote>
+                        This is a game-changing strategy in fast-food businesses, unlike anything I have experienced before <em>Best-Choice Food</em> is outstanding.
+                    </blockquote>
+                    <cite>- Scott Morpheus -</cite>
+                </div>
+                <div class="test" id="test-2">
+                    <img src="images/IMG_5061.jpg" alt="Customer's photo" title="Customer's photo">
+                    <blockquote>
+                        The services in <em>Best-Choice Food</em> is very much recommendable.
+                    </blockquote>
+                    <cite>- Dominic A. -</cite>
+                </div>
+            </div>
+        </section>
+        <section class="" id="questions">
+            <p><b>Frequently Asked Questions</b></p>
+            <div class="questions">
+                <div id="question-1">
+                    <p><b>How do I locate the restaurant menu?</b></p>
+                    <blockquote>
+                        Click on your desired restuarant and you will be redirected to the menu page. Thank you for using <Em>Best-Choice Food</Em>.
+                    </blockquote>
+                </div>
+                <div id="question-2">
+                    <p><b>How do I make Order?</b></p>
+                    <blockquote>
+                        Click on your desired restuarant and you will be redirected to the menu page, On the menu page click on the add cart button to make your choice and click the View cart button place order after making all your choices. 
+                        If you continue facing difficulty please reach out to our customer service. Thank you for using <Em>Best-Choice Food</Em>.
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section class="" id="advert-2"></section>
+        <section class="" id="newsletter">
+            <div class="hurry">
+                <h3>Hurry up!! Subcribe for our newsletter and get 25% off</h3>
+                <p>Do you want to be the first to get notified? subcribe below!</p>
+            </div>
+            <div class="hurry" id="text-box">
+                <input type="email" name="mails" id="mails" placeholder="Email" pattern="[a-z0-9.-_%+]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <button type="submit">Submit</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2 id="contact">Contact Us via</h2>
+        <p> 5, Oluwole street, Balogun Market, Lagos Island, Lagos State.</p>
+        <p><a href="mailto:bestchoicedishes@gmail.com"><img src="icons/gmail-logo.png" alt="Gmail_icon" title="Gmail">Gmail</a></p>
+        <p><a href="http://www.twitter.com/swipe4food"><img src="icons/twitter_icon.png" alt="Twitter_icon" title="Twitter">Twitter</a></p>
+        <p><a href="http://https://wa.me/+2347019110633"><img src="icons/whatsapp_icon.png" alt="whatsapp_icon" title="whatsapp_icon">Whatsapp</a></p>
+        <p>All Copyright Reserved</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+        <p><a href="#logo" id="top">Top>>>></a></p>
+    </footer>
+    <script src="landing.js"></script>
+</body>
+</html>

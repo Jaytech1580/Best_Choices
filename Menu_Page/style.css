@@ -1,0 +1,225 @@
+html{
+    box-sizing: border-box;
+    overflow: auto;
+}
+*{
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: inherit;
+}
+body{
+    font-family: Dosis;
+}
+#helpline{
+    width: 100%;
+    height: 50px;
+    background: #f8500d;
+    color: #ffff;
+    text-align: center;
+    font-size: 25px;
+}
+#helpline h6{
+    margin: 0px;
+    width: 100%;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    height: 80px;
+    padding-bottom: 10%;
+    /*border: 5px solid #f8500d;*/
+    background: #ffff;
+}
+#logo {
+    width: 40%;
+    line-height: 60px;
+    padding-left: 30px;
+}
+#logo span{
+    color: #f8500d;
+}
+#menu {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+ul.menu {
+    float: right;
+    margin-right: 20px;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+ul.menu li{
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 5px;
+}
+ul.menu li a{
+    color: #f8500d;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a:hover,a.active{
+    background: #090c0a;
+    transition: .5s;
+}
+.checkbtn  {
+    float: right;
+    line-height: 80px;
+    font-size: 30px;
+    color: #ffff;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+#check{
+    display:none;  
+}
+main{
+    box-sizing: inherit;
+    /*border: 5px solid #090c0a;*/
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.photo{
+    width: 100%;
+    height: 180px;
+    background-image: url("images/53ff42f4-2272-4f0f-a77f-e189e9a6dd2a.jpg");
+}
+.adult_rest{
+    /*border: 5px solid #4df869;*/
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.adult_rest button{
+    width: 150px;
+    height: 40px;
+    color: #ffff;
+    background: #f8500d;
+    border-radius: 10px;
+}
+.adult_rest img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+.sen-hd{
+    background: #f8500d;
+    color: #ffff;
+    text-align: center;
+}
+.berry{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 50px;
+}
+.desc{
+    margin-left: 50px;
+}
+#Chicken{
+    height: 2250px;
+}
+#Just{
+    height: 1700px;
+}
+#Foodie_Lagos{
+    height: 1700px;
+}
+.kids_rest{
+    background: #f8500d;
+    /*border: 2px solid #4dabf8;*/
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.sen-hd button{
+    color: #f8500d;
+    background: #ffff;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+.kids_rest p{
+    font-size: 20px;
+}
+.kids-sections{
+    text-align: center;
+    color: #ffff;
+}
+footer{
+    /*border: 5px solid #372eb8;*/
+    width: 100%;
+    height: 420px;
+    background-color: #f8500d;
+    text-align: center;
+    color: #ffff;
+}
+footer img{
+    width: 2%;
+}
+footer a{
+    text-decoration: none;
+    color: #ffff;
+}
+#top{
+    float: right;
+}
+@media screen and (max-width: 952px){
+    h1{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    ul.menu li a{
+        font-size: 13px;
+    }
+    .checkbtn{
+        display: block;
+
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 60vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    ul.menu li{
+        display:block;
+        margin-top: 10px;
+    }
+    ul.menu li a{
+        font-size: 20px; 
+    }
+    a:hover, a.active{
+        background: none;
+        color: #f8500d;
+    }
+    #check :checked ~ ul{
+        left:0;
+    }
+
+}
+@media screen and (max-width: 375px){
+    h1{
+        font-size: 13px;
+        padding-left: 10px;
+    }
+    ul.menu li a{
+        font-size: 13px;
+
+    }
+}

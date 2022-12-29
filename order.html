@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9ef880edfa.js" crossorigin="anonymous"></script>
+    <title>Order Now</title>
+</head>
+<body>
+    <header class="nav">
+        <div id="logo">
+            <h1>Best-Choice <span>Dishes</span></h1>
+        </div>
+        <div id="menu">
+            <ul class="menu">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="menu.html" >Menus</a></li>
+                <li><a href="about.html#contact">helpline</a></li>
+                <li><a href="order.html" class="active">Order Now</a></li>
+            </ul>
+    </header>
+    <main>
+        <div class="order" id="contact">
+            <h4 class="hd"><b>Contact Details</b></h4>
+            <div class="contact-input">
+                <p>Full Name    <input type="text" name="FullName" id="FullName" pattern="[a-zA-Z]"></p>
+            </div>
+            <div class="contact-input">
+                <p>Email    <input type="email" name="email" id="email" pattern="[a-z0-9.-_%+]+@[a-z0-9.-]+\.[a-z]{2,}$"></p>
+            </div>
+            <div class="contact-input">
+                <p>Contact No.    <input type="tel"name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></p>
+            </div>
+        </div>
+        <div class="order" id="delivery">
+            <h4 class="hd"><b>Delivery Address</b></h4>
+            <div class="contact-input">
+                <p>House No:</p>
+                <input type="text" name="Street" id="street">
+            </div>
+            <div class="contact-input">
+                <p>Street Name:</p>
+                <input type="text" name="Street" id="street">
+            </div>
+            <div class="contact-input">
+                <p>Nearest Landmark:</p>
+                <input type="text" name="Street" id="street">
+            </div>
+        </div>
+        <div class="order" id="payment">
+            <h4><b>Payment Method </b></h4>
+            <p><a href="">Pay On Delivery</a></p>
+            <p><a href="account.html">Bank Payment</a></p>
+        </div>
+        <div class="payment">
+            <p><b>By clicking this button, you agree with our <span><a href="">Terms and Conditions</a></span> </b></p>
+        </div>
+    </main>
+</body>
+</html>

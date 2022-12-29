@@ -1,0 +1,85 @@
+html{
+    box-sizing: border-box;
+    overflow: auto;
+}
+*{
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: inherit;
+}
+body{
+    font-family: Dosis;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    height: 80px;
+    padding-bottom: 10%;
+    /*border: 5px solid #f8500d;*/
+    background: #ffff;
+}
+#logo {
+    width: 40%;
+    line-height: 60px;
+    padding-left: 30px;
+}
+#logo span{
+    color: #f8500d;
+}
+#menu {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+ul.menu {
+    float: right;
+    margin-right: 20px;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+ul.menu li{
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 5px;
+}
+ul.menu li a{
+    color: #f8500d;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a:hover,a.active{
+    background: #090c0a;
+    transition: .5s;
+}
+main{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    background: #e5e9e7;
+    padding: 10px;
+}
+main button{
+    width: 200px;
+    height: 50px;
+    background: #f8500d;
+    border-radius: 20px;
+}
+main a:hover{
+    background: none;
+}
+.heading span{
+    color: #f8500d;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
